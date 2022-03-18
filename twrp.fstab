@@ -1,0 +1,8 @@
+/boot          emmc     /dev/block/platform/sdio_emmc/by-name/boot                      flags=backup=1;display="boot"
+/recovery      emmc     /dev/block/platform/sdio_emmc/by-name/recovery                      flags=backup=1;display="recovery"
+/data          ext4     /dev/block/platform/sdio_emmc/by-name/userdata	                       length=-16384;flags=backup=1;display="data"
+/system        ext4     /dev/block/platform/sdio_emmc/by-name/system                        flags=backup=1;display="system"
+/cache         ext4     /dev/block/platform/sdio_emmc/by-name/cache                      flags=backup=1;display="cache"
+/modem2        emmc     /dev/block/platform/sdio_emmc/by-name/wmodem                         flags=backup=1;display="Modem2"
+/external_sd   vfat     /dev/block/mmcblk1p1    /dev/block/mmcblk1   flags=display="Micro SD";storage;wipeingui;removable
+/usb-otg       auto     /dev/block/sda1         /dev/block/sda       flags=display="USB OTG";storage;wipeingui;removable
